@@ -1,0 +1,181 @@
+{
+  "info": {
+    "_postman_id": "e718fa6e-cf3d-47a1-81c1-8614e6ca3fe3",
+    "name": "OTP",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "LiveAcces",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "id": "cd5cc1b2-5e23-415c-839b-c96ff173d09a",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "mauthapi",
+            "value": "MWFG9WNAHZQ"
+          }
+        ],
+        "url": {
+          "raw": "https://api.2oo9.cloud/MXS47FLFX0U/tnevs/@public/api/liveaccess",
+          "protocol": "https",
+          "host": [
+            "api",
+            "2oo9",
+            "cloud"
+          ],
+          "path": [
+            "MXS47FLFX0U",
+            "tnevs",
+            "@public",
+            "api",
+            "liveaccess"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "console otp",
+      "id": "e3251553-c00c-4546-8dee-a285c12f8005",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "mauthapi",
+            "value": "MWFG9WNAHZQ"
+          }
+        ],
+        "url": {
+          "raw": "https://api.2oo9.cloud/MXS47FLFX0U/tnevs/@public/api/success-otp",
+          "protocol": "https",
+          "host": [
+            "api",
+            "2oo9",
+            "cloud"
+          ],
+          "path": [
+            "MXS47FLFX0U",
+            "tnevs",
+            "@public",
+            "api",
+            "success-otp"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "console",
+      "id": "f6aff807-2843-47ae-af95-48fcea1aa11e",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "mauthapi",
+            "value": "MWFG9WNAHZQ"
+          }
+        ],
+        "url": {
+          "raw": "https://api.2oo9.cloud/MXS47FLFX0U/tnevs/@public/api/console",
+          "protocol": "https",
+          "host": [
+            "api",
+            "2oo9",
+            "cloud"
+          ],
+          "path": [
+            "MXS47FLFX0U",
+            "tnevs",
+            "@public",
+            "api",
+            "console"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "success-otp",
+      "id": "acf3d318-97b5-4563-ad98-bcd1f9d68354",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "mauthapi",
+            "value": "MWFG9WNAHZQ"
+          }
+        ],
+        "url": {
+          "raw": "https://api.2oo9.cloud/MXS47FLFX0U/tnevs/@public/api/success-otp",
+          "protocol": "https",
+          "host": [
+            "api",
+            "2oo9",
+            "cloud"
+          ],
+          "path": [
+            "MXS47FLFX0U",
+            "tnevs",
+            "@public",
+            "api",
+            "success-otp"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "getnum",
+      "id": "1fd25bef-3f61-409b-9980-7fa60042f190",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Mauthapi",
+            "value": "MWFG9WNAHZQ"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"rid\": \"99677\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://api.2oo9.cloud/MXS47FLFX0U/tnevs/@public/api/getnum",
+          "protocol": "https",
+          "host": [
+            "api",
+            "2oo9",
+            "cloud"
+          ],
+          "path": [
+            "MXS47FLFX0U",
+            "tnevs",
+            "@public",
+            "api",
+            "getnum"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
